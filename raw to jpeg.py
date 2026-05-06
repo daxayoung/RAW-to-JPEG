@@ -76,7 +76,7 @@ class RAWtoJPEGConverter:
 def convert_raw_to_jpeg(raw_folder, output_folder):
     os.makedirs(output_folder, exist_ok=True)
 
-    raw_files = [f for f in os.listdir(raw_folder) if any(f.lower().endswith(ext) for ext in ['.arw', '.cr2', '.dng', '.nef', '.raw'])]
+    raw_files = [f for f in os.listdir(raw_folder) if any(f.lower().endswith(ext) for ext in ['.arw', '.cr2', '.dng', '.nef', '.raw', '.rw2', '.orf', '.raf'])]
 
     for raw_file in raw_files:
         raw_path = os.path.join(raw_folder, raw_file)
